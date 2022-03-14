@@ -20,10 +20,10 @@ import {
   ValidatedOptions,
 } from '@patternfly/react-core'
 import { InfoCircleIcon, CheckCircleIcon } from '@patternfly/react-icons'
-import FormHeader from './form/formHeader'
-import FlexForm from './form/flexForm'
-import FormBody from './form/formBody'
-import { mongoProviderType, crunchyProviderType } from '../const'
+import FormHeader from './form/formHeader.tsx'
+import FlexForm from './form/flexForm.tsx'
+import FormBody from './form/formBody.tsx'
+import { mongoProviderType, crunchyProviderType } from '../const.ts'
 import {
   getCSRFToken,
   fetchInventoriesAndMapByNSAndRules,
@@ -31,7 +31,7 @@ import {
   disableNSSelection,
   enableNSSelection,
   filterInventoriesByConnNS,
-} from '../utils'
+} from '../utils.ts'
 
 const LoadingView = () => {
   return (

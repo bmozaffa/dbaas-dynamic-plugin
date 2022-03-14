@@ -1,5 +1,6 @@
 import React from 'react'
 import * as _ from 'lodash'
+import { HelpIcon, ExternalLinkAltIcon } from '@patternfly/react-icons'
 import {
   Button,
   Alert,
@@ -13,8 +14,7 @@ import {
   ValidatedOptions,
   Popover,
 } from '@patternfly/react-core'
-import { getCSRFToken, fetchInvAndConnNamespacesFromTenants } from '../utils'
-import { HelpIcon, ExternalLinkAltIcon } from '@patternfly/react-icons'
+import { getCSRFToken, fetchInvAndConnNamespacesFromTenants } from '../utils.ts'
 import {
   mongoFetchCredentialsUrl,
   crunchyFetchCredentialsUrl,
@@ -22,7 +22,7 @@ import {
   mongoProviderType,
   crunchyProviderType,
   cockroachdbProviderType,
-} from '../const'
+} from '../const.ts'
 
 class ProviderAccountForm extends React.Component {
   constructor(props) {

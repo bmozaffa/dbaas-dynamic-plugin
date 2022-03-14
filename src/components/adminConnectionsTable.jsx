@@ -33,7 +33,6 @@ import {
   DBaaSInventoryCRName,
   DBaaSOperatorName,
 } from '../const.ts'
-import { fetchDbaasCSV } from '../utils'
 import './_dbaas-import-view.css'
 
 const TableEmptyState = () => {

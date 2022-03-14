@@ -31,7 +31,7 @@ import {
   crunchyProviderType,
   mongoProviderName,
   mongoProviderType,
-} from '../const'
+} from '../const.ts'
 import {
   disableNSSelection,
   enableNSSelection,
@@ -40,12 +40,12 @@ import {
   fetchObjectsByNamespace,
   fetchObjectsClusterOrNS,
   isDbaasConnectionUsed,
-} from '../utils'
+} from '../utils.ts'
 import AdminConnectionsTable from './adminConnectionsTable'
-import FlexForm from './form/flexForm'
-import FormBody from './form/formBody'
-import FormHeader from './form/formHeader'
-import InstanceListFilter from './instanceListFilter'
+import FlexForm from './form/flexForm.tsx'
+import FormBody from './form/formBody.tsx'
+import FormHeader from './form/formHeader.tsx'
+import InstanceListFilter from './instanceListFilter.tsx'
 import { handleCancel, handleTryAgain } from './instanceListPage'
 import './_dbaas-import-view.css'
 

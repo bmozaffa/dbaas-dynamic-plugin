@@ -12,7 +12,7 @@ import {
   Alert,
 } from '@patternfly/react-core'
 import { InfoCircleIcon, CheckCircleIcon } from '@patternfly/react-icons'
-import { DBaaSInventoryCRName } from '../const'
+import { DBaaSInventoryCRName } from '../const.ts'
 class InstancesForm extends React.Component {
   constructor(props) {
     super(props)
