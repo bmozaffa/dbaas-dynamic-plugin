@@ -1,12 +1,12 @@
 /* eslint-env node */
 
-import * as webpack from 'webpack';
 import * as path from 'path';
+
 const { ConsoleRemotePlugin } = require('@openshift-console/dynamic-plugin-sdk-webpack');
 
-const config: webpack.Configuration = {
+const config = {
   mode: 'development',
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, './src'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name]-bundle.js',
